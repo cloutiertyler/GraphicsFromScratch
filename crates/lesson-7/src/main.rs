@@ -329,7 +329,7 @@ fn main() {
                     direction: (pixel_position - camera.position).normalize(),
                 };
 
-                const SAMPLES: u32 = 1024;
+                const SAMPLES: u32 = 32;
                 let mut color = Vector3::new(0.0,0.0,0.0);
                 for _ in  0..SAMPLES {
                     color += get_color(&mut rng, &scene, &ray, 0, 3);

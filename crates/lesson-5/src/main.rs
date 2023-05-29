@@ -17,7 +17,7 @@ fn main() {
         for column in 0..WIDTH {
             // [0 0 0   0 0 0   0 0 0 ...]
             //          ^ ^ ^
-            //         pr g b
+            //         pb g r
             let pixel_pointer: usize = WIDTH * BYTES_PER_PIXEL * row + BYTES_PER_PIXEL * column;
             let blue_pointer = pixel_pointer;
             let green_pointer = pixel_pointer + 1;
